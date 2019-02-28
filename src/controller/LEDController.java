@@ -11,7 +11,7 @@ public class LEDController {
 	private final GpioPinDigitalOutput pinRed;
 	private final GpioPinDigitalOutput pinGreen;
 
-	public LEDController() throws InterruptedException {
+	public LEDController() {
 		final GpioController gpio = GpioFactory.getInstance();
 		pinRed = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_05, "MyLED",
 				PinState.LOW);

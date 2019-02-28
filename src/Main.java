@@ -1,4 +1,4 @@
-import controller.LEDController;
+import controller.MainController;
 
 /**
  * This example code demonstrates how to perform simple state
@@ -9,15 +9,8 @@ import controller.LEDController;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-    		LEDController ledController = new LEDController();
-    		ledController.setColor("green");
-    		Thread.sleep(1000);
-    		ledController.setColor("red");
-    		Thread.sleep(1000);
-    		ledController.setColor("green");
-    		Thread.sleep(1000);
-    		ledController.setColor("red");
-    		Thread.sleep(1000);
+    	MainController mc = new MainController();
+    	mc.showMainGui();
     		
     }
 }
